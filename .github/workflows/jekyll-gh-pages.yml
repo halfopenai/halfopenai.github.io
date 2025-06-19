@@ -8,6 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: myblog
+
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
