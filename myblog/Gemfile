@@ -4,6 +4,12 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 7.3"
 
+# Add logger gem to silence Ruby 3.5+ warnings
+gem "logger"
+
+# Add webrick for better server stability
+gem "webrick", "~> 1.8"
+
 gem "html-proofer", "~> 5.0", group: :test
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do

@@ -227,3 +227,18 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# WEBrick configuration for better server stability
+webrick:
+  headers:
+    'Access-Control-Allow-Origin': '*'
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+  server:
+    # Reduce connection timeout issues
+    timeout: 60
+    # Log level to reduce noise
+    log_level: :warn
+
+code:
+  copy_button: true
