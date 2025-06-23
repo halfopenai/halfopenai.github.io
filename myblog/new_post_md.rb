@@ -12,7 +12,7 @@ print "请输入文章标题："
 title = STDIN.gets.chomp.strip
 
 # === 转为文件名用的 slug ===
-slug = title.downcase.strip.gsub(/[^\w\s-]/, '').gsub(/\s+/, '-')
+slug = title.downcase.strip.gsub(/[^\w\p{han}\s-]/, '').gsub(/\s+/, '-')
 
 # === 当前时间 ===
 now = Time.now
