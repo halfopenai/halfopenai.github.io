@@ -1,0 +1,20 @@
+[
+  {
+    "title": "测试Jekyll-compose功能",
+    "url": "/posts/%E6%B5%8B%E8%AF%95jekyll-compose%E5%8A%9F%E8%83%BD/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-06-24 08:25:00 +0000",
+    "content": "在项目Gemfile文件中添加如下内容  group :jekyll_plugins do   gem &#39;jekyll-compose&#39; end   安装包 bundle install  测试能否生成md文件 bundle exec jekyll post 测试Jekyll Compose生成     参考命令        bundle exec jekyll post “标题”    ..."
+  },
+  {
+    "title": "搭建Jekyll静态Blog",
+    "url": "/posts/%E6%90%AD%E5%BB%BAjekyll%E9%9D%99%E6%80%81blog/",
+    "categories": "Jekyll, Github, Pages, Action",
+    "tags": "Tech",
+    "date": "2025-06-23 09:04:24 +0000",
+    "content": "在Github的pages, 使用Jekyll搭建静态Blog. 使用chirpy主题美化网站"
+  }
+  
+]
+
