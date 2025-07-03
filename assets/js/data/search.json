@@ -1,0 +1,28 @@
+[
+  {
+    "title": "关于关键软件变更引发的运维问题的思考",
+    "url": "/posts/%E5%85%B3%E4%BA%8E%E5%85%B3%E9%94%AE%E8%BD%AF%E4%BB%B6%E5%8F%98%E6%9B%B4%E5%BC%95%E5%8F%91%E7%9A%84%E8%BF%90%E7%BB%B4%E9%97%AE%E9%A2%98%E7%9A%84%E6%80%9D%E8%80%83/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-07-03 06:09:15 +0000",
+    "content": "事件描述     操作系统进行漏洞修复，升级了系统内核和一部分组件，其中openjdk部署在了新的目录（newopenjdk），并删除了原有的目录（oldopenjdk）。   应用程序启动时，提示jdk路径不存在（oldopenjdk）   JAVA_HOME的环境变量指向oldopenjdk   事件处置     方案1-建立软连接，将newopenjdk软连接到oldopenjdk  ..."
+  },
+  {
+    "title": "测试Jekyll-compose功能",
+    "url": "/posts/%E6%B5%8B%E8%AF%95jekyll-compose%E5%8A%9F%E8%83%BD/",
+    "categories": "",
+    "tags": "",
+    "date": "2025-06-24 08:25:00 +0000",
+    "content": "在项目Gemfile文件中添加如下内容  group :jekyll_plugins do   gem &#39;jekyll-compose&#39; end   安装包 bundle install  测试能否生成md文件 bundle exec jekyll post 测试Jekyll Compose生成     参考命令        bundle exec jekyll post “标题”    ..."
+  },
+  {
+    "title": "搭建Jekyll静态Blog",
+    "url": "/posts/%E6%90%AD%E5%BB%BAjekyll%E9%9D%99%E6%80%81blog/",
+    "categories": "Jekyll, Github, Pages, Action",
+    "tags": "Tech",
+    "date": "2025-06-23 09:04:24 +0000",
+    "content": "在Github的pages, 使用Jekyll搭建静态Blog. 使用chirpy主题美化网站"
+  }
+  
+]
+

@@ -1,0 +1,97 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://halfopenai.github.io/</id>
+  <title>Halo_alpha</title>
+  <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
+  <updated>2025-07-03T08:16:02+00:00</updated>
+  <author>
+    <name>Halo_alpha</name>
+    <uri>https://halfopenai.github.io/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="https://halfopenai.github.io/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="https://halfopenai.github.io/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2025 Halo_alpha </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>关于关键软件变更引发的运维问题的思考</title>
+    <link href="https://halfopenai.github.io/posts/%E5%85%B3%E4%BA%8E%E5%85%B3%E9%94%AE%E8%BD%AF%E4%BB%B6%E5%8F%98%E6%9B%B4%E5%BC%95%E5%8F%91%E7%9A%84%E8%BF%90%E7%BB%B4%E9%97%AE%E9%A2%98%E7%9A%84%E6%80%9D%E8%80%83/" rel="alternate" type="text/html" title="关于关键软件变更引发的运维问题的思考" />
+    <published>2025-07-03T06:09:15+00:00</published>
+  
+    <updated>2025-07-03T08:15:10+00:00</updated>
+  
+    <id>https://halfopenai.github.io/posts/%E5%85%B3%E4%BA%8E%E5%85%B3%E9%94%AE%E8%BD%AF%E4%BB%B6%E5%8F%98%E6%9B%B4%E5%BC%95%E5%8F%91%E7%9A%84%E8%BF%90%E7%BB%B4%E9%97%AE%E9%A2%98%E7%9A%84%E6%80%9D%E8%80%83/</id>
+    <content type="text/html" src="https://halfopenai.github.io/posts/%E5%85%B3%E4%BA%8E%E5%85%B3%E9%94%AE%E8%BD%AF%E4%BB%B6%E5%8F%98%E6%9B%B4%E5%BC%95%E5%8F%91%E7%9A%84%E8%BF%90%E7%BB%B4%E9%97%AE%E9%A2%98%E7%9A%84%E6%80%9D%E8%80%83/" />
+    <author>
+      <name>Halo_alpha</name>
+    </author>
+
+  
+    
+  
+
+  <summary>事件描述     操作系统进行漏洞修复，升级了系统内核和一部分组件，其中openjdk部署在了新的目录（newopenjdk），并删除了原有的目录（oldopenjdk）。   应用程序启动时，提示jdk路径不存在（oldopenjdk）   JAVA_HOME的环境变量指向oldopenjdk   事件处置     方案1-建立软连接，将newopenjdk软连接到oldopenjdk            优点：方案简单，操作一致性高，便于批量实施       缺点：由于路径中包含版本信息，后期管理中可能出现歧义           方案2-修改各个环境变量，修改程序配置的变量            优点: 针对方案1的缺点, 避免了后期管理中可能出现的歧义       缺点: 工作量巨大, 上百套系统的环境变量配置方式不一致, 有的从root用户继承, 有的在自己的profil...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>测试Jekyll-compose功能</title>
+    <link href="https://halfopenai.github.io/posts/%E6%B5%8B%E8%AF%95jekyll-compose%E5%8A%9F%E8%83%BD/" rel="alternate" type="text/html" title="测试Jekyll-compose功能" />
+    <published>2025-06-24T08:25:00+00:00</published>
+  
+    <updated>2025-06-24T08:25:00+00:00</updated>
+  
+    <id>https://halfopenai.github.io/posts/%E6%B5%8B%E8%AF%95jekyll-compose%E5%8A%9F%E8%83%BD/</id>
+    <content type="text/html" src="https://halfopenai.github.io/posts/%E6%B5%8B%E8%AF%95jekyll-compose%E5%8A%9F%E8%83%BD/" />
+    <author>
+      <name>Halo_alpha</name>
+    </author>
+
+  
+    
+  
+
+  <summary>在项目Gemfile文件中添加如下内容  group :jekyll_plugins do   gem &amp;#39;jekyll-compose&amp;#39; end   安装包 bundle install  测试能否生成md文件 bundle exec jekyll post 测试Jekyll Compose生成     参考命令        bundle exec jekyll post “标题”       #创建新文章     bundle exec jekyll draft “标题”      #创建草稿     bundle exec jekyll page “about”      #创建页面     bundle exec jekyll publish “文件”    #将草稿发布成文章      其他元数据介绍     description: #简介,没有的话取前两段内容   pi...</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>搭建Jekyll静态Blog</title>
+    <link href="https://halfopenai.github.io/posts/%E6%90%AD%E5%BB%BAjekyll%E9%9D%99%E6%80%81blog/" rel="alternate" type="text/html" title="搭建Jekyll静态Blog" />
+    <published>2025-06-23T09:04:24+00:00</published>
+  
+    <updated>2025-06-24T10:33:41+00:00</updated>
+  
+    <id>https://halfopenai.github.io/posts/%E6%90%AD%E5%BB%BAjekyll%E9%9D%99%E6%80%81blog/</id>
+    <content type="text/html" src="https://halfopenai.github.io/posts/%E6%90%AD%E5%BB%BAjekyll%E9%9D%99%E6%80%81blog/" />
+    <author>
+      <name>Halo_alpha</name>
+    </author>
+
+  
+    
+    <category term="Jekyll" />
+    
+    <category term="Github" />
+    
+    <category term="Pages" />
+    
+    <category term="Action" />
+    
+  
+
+  <summary>在Github的pages, 使用Jekyll搭建静态Blog. 使用chirpy主题美化网站</summary>
+
+  </entry>
+
+</feed>
+
+
